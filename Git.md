@@ -1,4 +1,4 @@
-![](E:\Git\Git学习\images\git.jpg)
+![](E:\Git\GitStudy\images\git.jpg)
 
 ```mysql
 git commit --amend -m 'xxx'                               # 合并上一次提交（用于反复修改）
@@ -64,11 +64,12 @@ git stash list                                            # 查看所有暂存
 git stash show -p stash@{0}                               # 参考第一次暂存
 git stash apply stash@{0}                                 # 应用第一次暂存
 git grep "delete from"                                    # 文件中搜索文本“delete from”
+git remote add 别名 远程地址								  # 创建别名
 ```
 
-
-
-
-
-
+>**合并冲突问题**
+>
+>如果合并后发生冲突，则需要手动解决冲突，解决后添加暂存区并提交本地库
+>
+>提交本地库时需要注意`git commit -m "xxx"` 后不能跟文件名
 
